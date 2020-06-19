@@ -1,0 +1,78 @@
+#img_school{
+    width: 200px;
+    height: 200px;
+}
+#img_student{
+    width: 200px;
+    height: 200px;
+}
+
+#img_addtest{
+    width: 200px;
+    height: 200px;
+}
+#img_edittest{
+    width: 200px;
+    height: 200px;
+}
+#div_logins{
+    background-color: blanchedalmond;
+    margin: 30px;
+    border: 1px solid cadetblue;
+    padding:10px;
+}
+#login_school{
+    margin: 20px;
+    border: 1px groove burlywood;
+    height: 400px; 
+}
+#login_admin{
+    margin: 20px;
+    border: 1px solid burlywood; 
+    height: 300px;
+}
+#login_student{
+    margin: 20px;
+    border: 1px solid burlywood; 
+    height: 470px;
+}
+.d-block{
+    height: 300px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #student_maildisplay_area{
+    text-align: center;
+    border: 2px solid maroon;
+  }
+  #neetexamsection{
+      text-align: left;
+  }
+  #neet1{
+      margin: 20px;
+      text-align: center;
+      border: 5px solid darkgrey;
+      width: 100px;
+      background-color: azure;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+  }
+  #neet2{
+    margin: 20px;
+    text-align: center;
+    border: 5px solid darkgrey;
+    width: 100px;
+    background-color: azure;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#neet3{
+    margin: 20px;
+    text-align: center;
+    border: 5px solid darkgrey;
+    width: 100px;
+    background-color: azure;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}

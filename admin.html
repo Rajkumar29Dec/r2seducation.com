@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R2s Education</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">RS EDUCATION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="neet.html">Neet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jee.html">JEE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mail</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+<!-- ------------------------------Registeration for schools and students -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <section onclick="addschool()">
+        <img src="/img/university.png" id="img_school"><br>
+        <h2>Register School</h2>
+      </section>
+    </div>
+    <div class="col-sm">
+      <section onclick="addstudent()">
+        <img src="/img/users.png" id="img_student"><br>
+        <h2>Register Students</h2>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------add test series -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <section onclick="addmeetinglink()">
+        <img src="/img/exam.png" id="img_addtest"><br>
+        <h2>Add Exams</h2>
+      </section>
+    </div>
+    <div class="col-sm">
+      <section onclick="edittest()">
+        <img src="/img/layer.png" id="img_edittest"><br>
+        <h2>Edit Exams</h2>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+<script src="firebase.js"></script>
+      <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  function addschool(){
+    alert("hi");
+window.location="addschool.html";
+  }
+  function addstudent(){
+    alert("Add student");
+    window.location="addstudent.html";
+  }
+  function addmeetinglink(){
+    alert("Add / Create New Meeting");
+    window.location="meetingadd.html";
+  }
+  
+  function edittest(){
+    alert("Edit old Testseries");
+    window.location="edittest.html";
+  }
+</script>
+  </body>
+</html>

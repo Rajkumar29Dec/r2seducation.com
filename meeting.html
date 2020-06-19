@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body onload="hostmeeting()">
+  <h1 style="color: blue;">Meeting Powered by Zoom and incorporate with R2S EDUCATION</h1>
+  <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
+    <iframe id="meeting_zoom"  allow="microphone; camera" style="border: 0; height: 100%;
+     left: 0; position: absolute; top: 0;
+      width: 100%;" frameborder="0"></iframe>
+  </div>
+
+
+
+  <script>
+    function hostmeeting(){
+    var meetinglinkref=firebase.database().ref('meetingid').child('meeting').
+    once('value',function(snapshot){
+      document.getElementById('meeting_zoom').src=snapshot.val().meeting_via;
+console.log(snapshot.val().meeting_via);      
+    });
+  }
+  </script>
+
+       
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+<script src="firebase.js"></script>
+</body>
+</html>
